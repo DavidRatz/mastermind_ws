@@ -7,6 +7,7 @@ import org.springframework.validation.annotation.Validated;
 
 import lombok.*;
 
+
 @Entity
 @Data
 @Validated
@@ -19,7 +20,6 @@ public class Classement {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long idClassement;
     @Column
-    @NotBlank
     private String nom;
     @Column
     private int score;

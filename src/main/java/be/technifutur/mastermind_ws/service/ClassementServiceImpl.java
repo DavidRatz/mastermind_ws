@@ -21,12 +21,13 @@ public class ClassementServiceImpl implements ClassementService {
 
     @Override
     public List<Classement> getAll() {
-        return repository.findAll().stream().map(mapper::toClassement).toList();
+        return repository.findAll().stream().toList();//.map(mapper::toClassement).toList();
     }
 
     @Override
     public Classement insertClassement(Classement toInsert) {
-        return mapper.toClassement(repository.save(toInsert));
+        //return mapper.toClassement(repository.save(toInsert));
+        return repository.save(toInsert);
     }
     
 }

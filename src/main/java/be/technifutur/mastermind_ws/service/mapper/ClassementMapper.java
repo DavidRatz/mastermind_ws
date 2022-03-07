@@ -1,7 +1,10 @@
 package be.technifutur.mastermind_ws.service.mapper;
 
+import org.springframework.stereotype.Component;
+
 import be.technifutur.mastermind_ws.model.entity.Classement;
 
+@Component
 public class ClassementMapper {
     public Classement toClassement(Classement entity){
 
